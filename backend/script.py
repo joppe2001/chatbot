@@ -17,7 +17,7 @@ def chat():
     try:
         input_text = request.json.get('input')
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",  # or another appropriate model
+            model="gpt-4",  # or another appropriate model
             messages=[{"role": "system", "content": "You are a helpful assistant."},
                       {"role": "user", "content": input_text}]
         )
